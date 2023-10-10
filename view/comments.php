@@ -11,6 +11,21 @@ function dbConnect() {
 		die("Erreur : ".$e->getMessage());		
 	}
 
+/* NEW COMMENT */
+function postComment($pseudo, $email, $comment) {
+	$db = dbConnect();
+	$content = $db->prepare("INSERT INTO comments (pseudo, email, comment) VALUES (?, ?, ?)");
+	$newComment=$content->execute(array($pseudo, $email, $comment));
+	return $newComment;
+}
+
+function displayComments () {
+	$db = dbConnect();
+	$req=$db->query("SELECT pseudo, comment, DATE_FORMAT(dated, ', le %d/%m/%Y à %H:%i') AS creationDate  FROM comments ORDER BY id DESC");
+	$allComments = $req;
+	return $allComments;
+}
+
 ?>
 
 <main id="comments">
