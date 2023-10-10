@@ -10,27 +10,13 @@
 		<form id="commentForm" action="" method="post">
 		
 			<div class="field contactInformations">
-				<label for="name">Votre nom *</label>
-				<input type="text" name="name" id="name" value="" />
-			</div>
-
-			<div class="field contactInformations">
-				<label for="firstname">Votre prénom *</label>
-				<input type="text" name="firstname" id="firstname" value="" />
-			</div>
-
-			<div class="field contactInformations">
-				<label for="email">Votre email</label>
-				<input type="email" name="email" id="email" value="" />
+				<label for="pseudo">Votre pseudo *</label>
+				<input type="text" name="pseudo" id="pseudo" value="" />
 			</div>
 
 			<div class="field">
 				<label for="content">Votre commentaire *</label>
 				<textarea name="content" id="content"></textarea>
-			</div>
-
-			<div id="required">				
-				<p><strong>* Ces informations sont requises.</strong></p>
 			</div>
 			
 			<div><input type="submit" name="send" class="button" value="Envoyer" /></div>
