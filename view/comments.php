@@ -2,29 +2,37 @@
 
 <?php
 
-/* CALL TO DATABASE */
-function dbConnect() {
-	try {
-		$db  = new PDO("mysql:host=localhost;dbname=projetstudi;charset=utf8", "freynaut", "admin2018");
-		return $db;
-	} catch(Exception $e) {
-		die("Erreur : ".$e->getMessage());		
-	}
+
 
 /* NEW COMMENT */
-function postComment($pseudo, $email, $comment) {
+function postComment($pseudo, $commentary) {
 	$db = dbConnect();
-	$content = $db->prepare("INSERT INTO comments (pseudo, email, comment) VALUES (?, ?, ?)");
-	$newComment=$content->execute(array($pseudo, $email, $comment));
+	$content = $db->prepare("INSERT INTO comments (pseudo, commentary) VALUES (?, ?, ?)");
+	$newComment=$content->execute(array($pseudo, $commentary));
 	return $newComment;
 }
 
+/* SEE ALL COMMENTS */
 function displayComments () {
 	$db = dbConnect();
-	$req=$db->query("SELECT pseudo, comment, DATE_FORMAT(dated, ', le %d/%m/%Y à %H:%i') AS creationDate  FROM comments ORDER BY id DESC");
+	$req=$db->query("SELECT pseudo, commentary, DATE_FORMAT(dated, ', le %d/%m/%Y à %H:%i') AS creationDate  FROM comments ORDER BY id DESC");
 	$allComments = $req;
 	return $allComments;
 }
+
+/* CALL TO DATABASE */
+
+function dbConnect() {
+	try {
+			$db  = new PDO('mysql:host=localhost;dbname=commentsprojectstudi;charset=utf8', 'freynaut', 'admin2018');
+			return $db;
+		}
+	catch(Exception $e) {
+		die('Erreur : '.$e->getMessage());
+		}
+	}
+/*$pseudo = htmlspecialchars($_POST["pseudo"]);
+$commentary = htmlspecialchars($_POST["commentary"]);*/
 
 ?>
 
@@ -37,14 +45,14 @@ function displayComments () {
 
 		<form id="commentForm" action="" method="post">
 		
-			<div class="field contactInformations">
+			<div class="field">
 				<label for="pseudo">Votre pseudo</label>
 				<input type="text" name="pseudo" id="pseudo" value="" />
 			</div>
 
 			<div class="field">
-				<label for="content">Votre commentaire</label>
-				<textarea name="content" id="content"></textarea>
+				<label for="commentary">Votre commentaire</label>
+				<textarea name="commentary" id="commentary"></textarea>
 			</div>
 			
 			<div><input type="submit" name="send" class="button" value="Envoyer" /></div>
