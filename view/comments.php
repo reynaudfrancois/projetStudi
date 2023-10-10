@@ -10,12 +10,12 @@
 		<form id="commentForm" action="" method="post">
 		
 			<div class="field contactInformations">
-				<label for="pseudo">Votre pseudo *</label>
+				<label for="pseudo">Votre pseudo</label>
 				<input type="text" name="pseudo" id="pseudo" value="" />
 			</div>
 
 			<div class="field">
-				<label for="content">Votre commentaire *</label>
+				<label for="content">Votre commentaire</label>
 				<textarea name="content" id="content"></textarea>
 			</div>
 			
