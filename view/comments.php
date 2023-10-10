@@ -31,8 +31,21 @@ function dbConnect() {
 		die('Erreur : '.$e->getMessage());
 		}
 	}
-/*$pseudo = htmlspecialchars($_POST["pseudo"]);
-$commentary = htmlspecialchars($_POST["commentary"]);*/
+
+function addComment($pseudo, $commentary) {
+	$newComment = postComment($pseudo, $commentary);
+	if ($newComment === false) {
+        die("Impossible d'ajouter le commentaire !");
+    }
+    else {
+        header("Location: comments.php?action=viewComments");
+    }
+}
+
+function viewComments ($errorMessage) {
+	$error = $errorMessage;
+	$reqAllComments = displayComments();
+}
 
 ?>
 
