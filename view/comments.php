@@ -1,5 +1,18 @@
 <?php require "header.php"; ?>
 
+<?php
+
+/* CALL TO DATABASE */
+function dbConnect() {
+	try {
+		$db  = new PDO("mysql:host=localhost;dbname=projetstudi;charset=utf8", "freynaut", "admin2018");
+		return $db;
+	} catch(Exception $e) {
+		die("Erreur : ".$e->getMessage());		
+	}
+
+?>
+
 <main id="comments">
 
 	<div>		
