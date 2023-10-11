@@ -15,10 +15,10 @@
 		<header>
 
 			<nav>
-				<a href="/projetStudi/index.php">PRESENTATION</a>
-				<a href="/projetStudi/view/story.php">RECIT</a>
-				<a href="/projetStudi/view/photos.php">PHOTOS</a>
-				<a href="/projetStudi/view/comments.php">COMMENTAIRES</a>
+				<a href="/projetStudi/index.php">LA PRESENTATION</a>
+				<a href="/projetStudi/view/areas.php">LE PERIGORD</a>
+				<a href="/projetStudi/view/story.php">LE RECIT</a>
+				<a href="/projetStudi/view/photos.php">LES PHOTOS</a>
 			</nav>
 
 			<div id="title">
