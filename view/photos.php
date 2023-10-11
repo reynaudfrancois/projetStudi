@@ -15,11 +15,12 @@
 					<button id="before"><strong>&lt;</strong> Image précédente</button>
 					<button id="next">Image suivante <strong>&gt;</strong></button>
 				</div>
-				<h4 id="titleImage"></h4>
-				<h4 id="counterImage"></h4>
 			</div>
-
 		</div>
+		<h4 id="titleImage"></h4>
+		<h4 id="counterImage"></h4>
+
+		
 
 			<script src="../public/javascript/script.js"></script>		
 
