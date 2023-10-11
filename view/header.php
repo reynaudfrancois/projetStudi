@@ -23,8 +23,8 @@
 
 			<div id="title">
 				<h1>La traversée du Périgord</h1>
-				<h2>Du 28 septembre au 9 octobre 2023</h2>
-				<h3>par François REYNAUD</h3>
+				<h2 id="titleH2">Du 28 septembre au 9 octobre 2023</h2>
+				<h3 id="titleH3">par François REYNAUD</h3>
 			</div>
 			
 		</header>

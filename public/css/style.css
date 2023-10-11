@@ -1,0 +1,75 @@
+/* GENERAL */
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+
+html {
+	margin: auto;
+ 	scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+.pageTitle {
+	font-size: 60px;
+}
+
+/* HEADER */
+
+nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav a {
+	font-size: 50px;
+	background-color: lightcyan;
+	padding: 10px;
+}
+
+h1 {
+	color: green;
+	font-size: 80px;
+}
+
+#titleH2 {
+	color: blue;
+	font-size: 40px;
+}
+
+#titleH3 {
+	color: blue;
+	font-size: 25px;
+}
+
+/* MAIN */
+
+img {
+	width: 600px;
+}
+
+main div div {
+	display: flex;
+	justify-content: space-around;
+	padding: 0;
+	margin-bottom: 100px;
+}
+
+main h2, #index h3 {
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+p { 
+	margin: 40px;
+}

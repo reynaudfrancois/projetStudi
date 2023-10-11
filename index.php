@@ -3,7 +3,7 @@
 <main id="index">
 
 	<div id="presentation">
-		<h2>PRESENTATION</h2>
+		<h2 class=pageTitle>PRESENTATION</h2>
 		<p>Au début de l'automne 2023, entre le 28 septembre et le 9 octobre, j'ai décider d'effectuer une randonnée dand le département de la Dordogne, qui correspond au Périgord. Cette randonnée s'est effectuée en 10 étapes, à travers le Périgord Noir, qui correspond à l'arrondissement de Sarlat-la-Canéda, et le Périgord Vert, qui correspond à l'arrondissement de Nontron.</p>
 		<div><img src="public/images/image1.JPG"></div>
 	</div>

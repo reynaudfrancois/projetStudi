@@ -2,7 +2,7 @@
 
 	<main id="photos">
 		
-		<h2>LES PHOTOS</h2>
+		<h2 class=pageTitle>LES PHOTOS</h2>
 
 		<div class="imagesTrek">
 
