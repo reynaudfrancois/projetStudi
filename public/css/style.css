@@ -73,3 +73,42 @@ main h2, #index h3 {
 p { 
 	margin: 40px;
 }
+
+	/* MAIN #photos */
+
+#before, #next {
+	background-color: #a9a9a9;
+	color : #fff;
+	margin: 10px;
+}
+
+#sliderContainer {
+	margin-bottom: 0;
+}
+
+#imagesOfSlider {
+	max-width: 700px;
+	max-height: 700px;
+	width: auto;
+	height: auto;
+}
+
+#before, #next {
+	background-color: darkcyan;
+	border-color: darkblue;
+}
+
+#before:hover, #next:hover {
+	background-color: #000;
+}
+
+#buttonSlider div {
+	margin: auto;
+	text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+	text-align: center;
+}
