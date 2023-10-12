@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="/projetStudi/public/css/normalize-css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="/projetStudi/public/fontawesome/css/all.css" />
-		<link rel="stylesheet" href="/projetStudi/public/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="/public/css/normalize-css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="/public/fontawesome/css/all.css" />
+		<link rel="stylesheet" href="/public/css/style.css" />
 		<title>La traversée du Périgord</title>
 	</head>
 
@@ -15,10 +15,10 @@
 		<header>
 
 			<nav>
-				<a href="/projetStudi/index.php">LA PRESENTATION</a>
-				<a href="/projetStudi/view/areas.php">LE PERIGORD</a>
-				<a href="/projetStudi/view/story.php">LE RECIT</a>
-				<a href="/projetStudi/view/photos.php">LES PHOTOS</a>
+				<a href="/index.php">LA PRESENTATION</a>
+				<a href="/view/areas.php">LE PERIGORD</a>
+				<a href="/view/story.php">LE RECIT</a>
+				<a href="/view/photos.php">LES PHOTOS</a>
 			</nav>
 
 			<div id="title">
